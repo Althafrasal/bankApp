@@ -38,13 +38,13 @@
         <div class="col"></div>
         <div class="col">
             <div class="mt-2 p-2" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 10px;">
-                <input type="text" placeholder="Account number" class="form-control" id="acid" style="border:none;" (change)="acnoChange($event)">
+                <input type="text" placeholder="Account number" class="form-control" id="acid" style="border:none;" #acno>
             </div>
             <div class="mt-2 p-2"  style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 10px;">
-                <input type="password" placeholder="Password" class="form-control" id="pid" style="border:none;" (change)="pswChange($event)">
+                <input type="password" placeholder="Password" class="form-control" id="pid" style="border:none;" #psw>
             </div>
             <div class="mt-2 p-3 text-center ">
-                <button type="button" class="btn btn-success" (click)="login()" >login</button>
+                <button type="button" class="btn btn-success" (click)="login(acno,psw)" >login</button>
                 
                  <button type="button" class="btn btn-outline-primary ms-3" >signup</button>
             </div>
