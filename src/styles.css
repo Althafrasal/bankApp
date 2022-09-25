@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('./assets/b1.jpg');
+    background-repeat: no-repeat;   
+}
+
+@media (max-width:390px)
+{
+  body{
+    background-position: center;
+     padding: none; 
+
+}
+}
