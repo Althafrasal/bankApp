@@ -1,0 +1,22 @@
+<!-- <p>transaction works!</p> -->
+<!-- structural directive >> ngFor - can apply directly in HTMl to access datas from array -->
+<div class="container w-50 mt-3">
+    <h3 class="text-center">Transaction History</h3>
+    <table class="table table-bordered text-center mt-2">
+        <thead>
+            <tr>
+                <td>Type</td>
+                <td>Amount</td>
+            </tr>
+        </thead>
+      <tbody>
+        <tr *ngFor="let i of transaction">
+            <td>{{i.type}}</td>
+            <td>{{i.amount}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<div class="container text-center">
+    <a routerLink="/dashboard" style="color: black;"><i class="fa-solid fa-house-user"></i></a>
+</div>

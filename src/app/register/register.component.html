@@ -1,0 +1,30 @@
+<!-- <p>register works!</p> -->
+<form action="" (ngSubmit)="register()">
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">
+            <div class="container mt-5 p-3">
+                <h2 class="text-center">Registration form</h2>
+                <div class="mt-4 p-2" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 10px;">
+                    <input name="username" type="text" placeholder="username" class="form-control" id="unameid"
+                        style="border: none;" [(ngModel)]="uname">
+                </div>
+                <div class="mt-2 p-2" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  border-radius: 10px;">
+                    <input name="acno" type="text" placeholder="Account number" class="form-control" id="acno"
+                        style="border:none" [(ngModel)]="acno">
+                </div>
+                <div class="mt-2 p-2" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  border-radius: 10px;">
+                    <input name="pswd" type="text" placeholder="password" class="form-control" id="psid"
+                        style="border:none;" [(ngModel)]="pswd">
+                </div>
+                <div class="text-center mt-2 p-2">
+                    <button type="submit" class="btn btn-primary">register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</form>

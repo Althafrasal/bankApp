@@ -2,6 +2,7 @@
 body{
     background-image: url('./assets/b1.jpg');
     background-repeat: no-repeat;   
+    
 }
 
 @media (max-width:390px)

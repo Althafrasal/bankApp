@@ -1,18 +1,19 @@
 <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-building-columns"></i> </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><i class="fa-sharp fa-solid fa-house"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-          <!-- <li class="nav-item dropdown">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-building-columns"></i> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa-sharp fa-solid fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
@@ -23,33 +24,41 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li> -->
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
-          <button class="btn btn-outline-dark" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-        </form>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit"><i
+            class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div>
+  <h3 class="text-center">{{aim}}</h3>
+</div>
+<form action="" (ngSubmit)="login()">
+<div class="container p-5 mt-5">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col">
+      <div class="mt-2 p-2" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 10px;">
+        <input name="acnum" type="text" placeholder="Account number" class="form-control" id="acid" style="border:none;"
+          [(ngModel)]="acno">
+      </div>
+      <div class="mt-2 p-2" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 10px;">
+        <input name="psw" type="password" placeholder="Password" class="form-control" id="pid" style="border:none;"
+          [(ngModel)]="psw">
+      </div>
+      <div class="mt-2 p-3 text-center ">
+        <button type="submit" class="btn btn-success">login</button>
+       
+        <a href="" style="text-decoration:none;margin-left:10px;" class="text-primary" routerLink="register">signup</a>
+        <!-- <button type="button" class="btn btn-outline-primary ms-3">signup</button> -->
       </div>
     </div>
-  </nav>
-  <div><h3 class="text-center">{{aim}}</h3></div>
-<div class="container p-5 mt-5">
-    <div class="row" >
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col">
-            <div class="mt-2 p-2" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 10px;">
-                <input type="text" placeholder="Account number" class="form-control" id="acid" style="border:none;" #acno>
-            </div>
-            <div class="mt-2 p-2"  style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 10px;">
-                <input type="password" placeholder="Password" class="form-control" id="pid" style="border:none;" #psw>
-            </div>
-            <div class="mt-2 p-3 text-center ">
-                <button type="button" class="btn btn-success" (click)="login(acno,psw)" >login</button>
-                
-                 <button type="button" class="btn btn-outline-primary ms-3" >signup</button>
-            </div>
-        </div>
-    </div>   
+  </div>
 </div>
+</form>
 <br><br>
 <marquee behavior="" direction="">“The more your money works for you, the less you have to work for money.”</marquee>
